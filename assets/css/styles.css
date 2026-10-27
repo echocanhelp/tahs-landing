@@ -84,3 +84,15 @@ footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
   footer .cols{grid-template-columns:1fr}
   nav ul{gap:14px}
 }
+
+/* v1.1 — research-driven */
+.zh-hero{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.2rem);color:var(--muted);font-weight:400;margin-top:.15em}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;margin:8px 0 10px}
+.stats a{display:block;background:#FBF8F0;border:1px solid var(--rule);border-radius:6px;padding:16px 18px}
+.stats a:hover{text-decoration:none;border-color:var(--seal)}
+.stats dt{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.stats dd{font-family:var(--serif);font-size:1.7rem;font-weight:600;color:var(--ink)}
+.pullquote{background:var(--screen);color:#E8E4DA}
+.pullquote blockquote{font-family:var(--serif);font-size:clamp(1.2rem,2.4vw,1.7rem);line-height:1.7;max-width:52ch}
+.pullquote .en{font-size:.75em;color:#B9C4CC;font-style:italic}
+.pullquote a{color:#E8E4DA}
