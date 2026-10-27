@@ -3,12 +3,11 @@
   "publicName": "Taiwanese American Historical Society (TAHS)",
   "publicNameZh": "台美人歷史協會",
   "ein": "46-4005384",
-  "irsStatus": "501(c)(3), unconditional exemption, contributions deductible, determination June 2024",
+  "irsStatus": "501(c)(3), unconditional exemption, contributions deductible, determination June 2024. BMF classification 1 = charitable organization — confirm purposes on the determination letter.",
   "ntee": "A80 — Historical Societies, Related Historical Activities",
-  "bmfFoundationCode": "170(b)(1)(A)(vi), publicly supported (confirm on the determination letter)",
-  "irsAddressOnFile": "La Habra Hgts, CA (street pending TEOS confirmation — BMF extract 2026-10-27 shows La Habra Hgts; previously 8220 Behan Way, San Gabriel)",
+  "bmfFoundationCode": "170(b)(1)(A)(vi) (BMF foundation code 15) — confirm on the determination letter",
+  "irsAddressOnFile": "1910 Kanola Rd, La Habra Hgts, CA (BMF extract 2026-10-21; confirm on TEOS before any vendor address-match)",
   "registeredOffice": "1910 Kanola Road, La Habra Heights, CA 90631",
-  "registeredOfficeNote": "owner-recorded 2026-10; vendors must use the IRS address on file until TEOS updates",
   "president": {
     "en": "Leonard Hsu Jr.",
     "zh": "許景鴻"
@@ -18,17 +17,21 @@
     "zh": "楊嘉猷"
   },
   "foundingClause": "Organized in Southern California, 2013–2014",
-  "filings": "Files IRS Form 990-N. Latest period visible on public BMF extracts: December 2024.",
+  "filings": "Files IRS Form 990-N (filing requirement code 2). BMF tax period: 2025-12 (extract 2026-10-21).",
   "verifyUrl": "https://apps.irs.gov/app/eos/",
   "echopediaUrl": "https://echopedia.tah-society.org",
   "echopediaUrlFallback": "https://echocanhelp.github.io/wiki-public/",
   "contactInbox": "TBD — Workspace address (do not publish personal Gmail)",
-  "_teosGate": "PENDING human check on https://apps.irs.gov/app/eos/ (headless blocked by Akamai): confirm street address, NTEE A80, subsection, 990-N periods. ProPublica BMF mirror (secondary source) already confirms name/EIN/ruling/deductibility/city.",
+  "_teosGate": "PENDING human check on https://apps.irs.gov/app/eos/ (headless blocked): confirm street, NTEE A80, subsection, 990-N periods. BMF mirror (secondary) confirms the fields listed above.",
   "verifiedViaBMFMirror_20261027": [
     "legal name",
     "EIN 464005384",
     "ruling_date 2024-06-01",
-    "deductibility code 1 = 170(b)(1)(A)(vi)",
-    "city La Habra Hgts CA"
-  ]
+    "deductibility_code 1 (contributions deductible)",
+    "foundation_code 15 = 170(b)(1)(A)(vi)",
+    "classification_codes 1000 (charitable)",
+    "tax_period 2025-12",
+    "address 1910 KANOLA RD, La Habra Hgts CA"
+  ],
+  "teosBlockEvidence_20261027": "apps.irs.gov root=200 but /app/eos/*=403 (Akamai) for both curl and real browser; /api/ein/ein/464005384.json=302->www.irs.gov/404; Wayback has no allSearch snapshot. Route-level WAF block on this egress IP, not headless detection."
 }
