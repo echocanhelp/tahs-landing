@@ -25,8 +25,7 @@ def strip_html():
         ("Founding president", f'{FACTS["foundingPresident"]["en"]} ({FACTS["foundingPresident"]["zh"]})'),
     ]
     dl = "\n".join(f'    <div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in rows)
-    note = (f'  <p class="note small muted">Vendors and license reviewers: use the IRS address on file '
-            f'until IRS records show the office move. Verify us at '
+    note = (f'  <p class="note small muted">Vendors and license reviewers: confirm the current IRS address on our record at '
             f'<a href="{FACTS["verifyUrl"]}">IRS Tax Exempt Organization Search</a> — search EIN {FACTS["ein"]}.</p>')
     return f"  <dl>\n{dl}\n  </dl>\n{note}"
 

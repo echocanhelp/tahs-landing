@@ -6,7 +6,7 @@
   "irsStatus": "501(c)(3), unconditional exemption, contributions deductible, determination June 2024",
   "ntee": "A80 — Historical Societies, Related Historical Activities",
   "bmfFoundationCode": "170(b)(1)(A)(vi), publicly supported (confirm on the determination letter)",
-  "irsAddressOnFile": "8220 Behan Way, San Gabriel, CA 91775-1738",
+  "irsAddressOnFile": "La Habra Hgts, CA (street pending TEOS confirmation — BMF extract 2026-10-27 shows La Habra Hgts; previously 8220 Behan Way, San Gabriel)",
   "registeredOffice": "1910 Kanola Road, La Habra Heights, CA 90631",
   "registeredOfficeNote": "owner-recorded 2026-10; vendors must use the IRS address on file until TEOS updates",
   "president": {
@@ -23,5 +23,12 @@
   "echopediaUrl": "https://echopedia.tah-society.org",
   "echopediaUrlFallback": "https://echocanhelp.github.io/wiki-public/",
   "contactInbox": "TBD — Workspace address (do not publish personal Gmail)",
-  "_teosGate": "PENDING — L4 card t_fde5899d: verify every fact above on IRS TEOS before public ship"
+  "_teosGate": "PENDING human check on https://apps.irs.gov/app/eos/ (headless blocked by Akamai): confirm street address, NTEE A80, subsection, 990-N periods. ProPublica BMF mirror (secondary source) already confirms name/EIN/ruling/deductibility/city.",
+  "verifiedViaBMFMirror_20261027": [
+    "legal name",
+    "EIN 464005384",
+    "ruling_date 2024-06-01",
+    "deductibility code 1 = 170(b)(1)(A)(vi)",
+    "city La Habra Hgts CA"
+  ]
 }
