@@ -1,0 +1,27 @@
+{
+  "legalName": "Taiwanese American Historical Society Inc",
+  "publicName": "Taiwanese American Historical Society (TAHS)",
+  "publicNameZh": "台美人歷史協會",
+  "ein": "46-4005384",
+  "irsStatus": "501(c)(3), unconditional exemption, contributions deductible, determination June 2024",
+  "ntee": "A80 — Historical Societies, Related Historical Activities",
+  "bmfFoundationCode": "170(b)(1)(A)(vi), publicly supported (confirm on the determination letter)",
+  "irsAddressOnFile": "8220 Behan Way, San Gabriel, CA 91775-1738",
+  "registeredOffice": "1910 Kanola Road, La Habra Heights, CA 90631",
+  "registeredOfficeNote": "owner-recorded 2026-10; vendors must use the IRS address on file until TEOS updates",
+  "president": {
+    "en": "Leonard Hsu Jr.",
+    "zh": "許景鴻"
+  },
+  "foundingPresident": {
+    "en": "Charles Yang",
+    "zh": "楊嘉猷"
+  },
+  "foundingClause": "Organized in Southern California, 2013–2014",
+  "filings": "Files IRS Form 990-N. Latest period visible on public BMF extracts: December 2024.",
+  "verifyUrl": "https://apps.irs.gov/app/eos/",
+  "echopediaUrl": "https://echopedia.tah-society.org",
+  "echopediaUrlFallback": "https://echocanhelp.github.io/wiki-public/",
+  "contactInbox": "TBD — Workspace address (do not publish personal Gmail)",
+  "_teosGate": "PENDING — L4 card t_fde5899d: verify every fact above on IRS TEOS before public ship"
+}
