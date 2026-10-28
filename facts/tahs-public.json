@@ -21,7 +21,12 @@
   "verifyUrl": "https://apps.irs.gov/app/eos/",
   "echopediaUrl": "https://echopedia.tah-society.org",
   "echopediaUrlFallback": "https://echocanhelp.github.io/wiki-public/",
-  "contactInbox": "TBD — Workspace address (do not publish personal Gmail)",
+  "contactInbox": "tahistoricalsociety@gmail.com",
+  "contactEmails": ["tahistoricalsociety@gmail.com", "echocanhelp@gmail.com"],
+  "contactPhone": "+16268985199",
+  "contactPhoneDisplay": "(626) 898-5199",
+  "contactAuthorized": "Owner-authorized public contact methods, 2026-10-27 (organizational inboxes, not personal Gmail).",
+  "determinationShort": "original IRS determination Jan 13, 2014 · reinstated Jun 15, 2024",
   "_teosGate": "PASSED 2026-10-27 — owner-supplied TEOS printout (cache/documents/native-inputs/872b.../doc_30ac...pdf). NTEE A80 not shown on TEOS page; BMF mirror carries it — keep NTEE line with 'per IRS BMF' attribution.",
   "verifiedViaBMFMirror_20261027": [
     "legal name",

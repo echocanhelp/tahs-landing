@@ -32,10 +32,13 @@ def strip_html():
 def footer_html():
     lines = [
         FACTS["legalName"],
-        f'EIN {FACTS["ein"]} · 501(c)(3) · IRS determination June 2024',
+        f'EIN {FACTS["ein"]} · 501(c)(3) · {FACTS["determinationShort"]}',
         f'IRS address on file: {FACTS["irsAddressOnFile"]}',
         f'Registered office: {FACTS["registeredOffice"]}',
         f'Echopedia: <a href="{FACTS["echopediaUrl"]}">{FACTS["echopediaUrl"].split("//")[1]}</a>',
+        'Contact: ' + ' · '.join(
+            f'<a href="mailto:{e}">{e}</a>' for e in FACTS["contactEmails"]
+        ) + f' · <a href="tel:{FACTS["contactPhone"]}">{FACTS["contactPhoneDisplay"]}</a>',
         "Determination letter and recent filings: available on request under IRS public-inspection rules.",
         f'© {FACTS["legalName"]}.',
     ]

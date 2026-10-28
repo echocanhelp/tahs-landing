@@ -24,7 +24,8 @@ section:first-of-type{border-top:none}
 /* nav */
 nav{position:sticky;top:0;background:rgba(244,240,230,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule);z-index:50}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.wordmark{font-family:var(--serif);font-weight:600;font-size:1.15rem;color:var(--ink)}
+.wordmark{font-family:var(--serif);font-weight:600;font-size:1.15rem;color:var(--ink);display:inline-flex;align-items:center;gap:.5em}
+.wordmark img.seal{height:2.3em;width:2.3em;border-radius:50%;object-fit:cover}
 .wordmark .zh{font-size:.95rem;color:var(--muted);margin-left:.5em}
 nav ul{display:flex;gap:22px;list-style:none}
 nav ul a{color:var(--ink);font-size:.95rem}
@@ -78,6 +79,9 @@ table.officers th{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase
 footer{background:var(--ink);color:#B9B2A6;padding:56px 0 40px;font-size:.88rem}
 footer a{color:#E8E4DA}
 footer .legal{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.84rem;line-height:1.9;user-select:all}
+footer img.seal{height:56px;width:56px;border-radius:50%;object-fit:cover;margin-bottom:14px}
+.contact-block{border:1px solid var(--line,#ddd);border-radius:10px;padding:20px 22px;margin-top:14px}
+.contact-block p{margin:.35em 0}
 footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 @media(max-width:760px){
   .hero .wrap{grid-template-columns:1fr}
