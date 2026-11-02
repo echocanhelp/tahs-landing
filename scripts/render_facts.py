@@ -20,6 +20,8 @@ def strip_html():
         ("BMF foundation code", FACTS["bmfFoundationCode"]),
         ("IRS address on file", FACTS["irsAddressOnFile"]),
         ("Registered office", FACTS["registeredOffice"]),
+        ("Determination letter address", FACTS["determinationLetterAddress"]),
+        ("Original 2014 letter address", FACTS["determinationLetterAddress2014"]),
         ("Filings", FACTS["filings"]),
         ("President", f'{FACTS["president"]["en"]} ({FACTS["president"]["zh"]})'),
         ("Founding president", f'{FACTS["foundingPresident"]["en"]} ({FACTS["foundingPresident"]["zh"]})'),
@@ -35,6 +37,7 @@ def footer_html():
         f'EIN {FACTS["ein"]} · 501(c)(3) · {FACTS["determinationShort"]}',
         f'IRS address on file: {FACTS["irsAddressOnFile"]}',
         f'Registered office: {FACTS["registeredOffice"]}',
+        f'Determination letter address: {FACTS["determinationLetterAddress"]}',
         f'Echopedia: <a href="{FACTS["echopediaUrl"]}">{FACTS["echopediaUrl"].split("//")[1]}</a>',
         'Contact: ' + ' · '.join(
             f'<a href="mailto:{e}">{e}</a>' for e in FACTS["contactEmails"]
