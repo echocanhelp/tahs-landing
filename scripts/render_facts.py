@@ -47,6 +47,16 @@ def footer_html():
     ]
     return "\n    " + "<br>\n    ".join(lines) + "\n  "
 
+def contact_block_html():
+    emails = " · ".join(
+        f'<a href="mailto:{e}">{e}</a>' for e in FACTS["contactEmails"]
+    )
+    return (
+        '\n    <p><strong>Email</strong> — organizational inbox:\n'
+        f'      {emails}</p>\n'
+        f'    <p><strong>Phone</strong> — <a href="tel:{FACTS["contactPhone"]}">{FACTS["contactPhoneDisplay"]}</a></p>\n  '
+    )
+
 def render(text, name, body):
     pat = re.compile(rf"(<!--BEGIN {name}-->)(.*?)(<!--END {name}-->)", re.S)
     if not pat.search(text):
@@ -59,7 +69,7 @@ def main():
     drift = []
     for page in sorted(ROOT.glob("*.html")):
         text = orig = page.read_text()
-        for name, body in (("FACTS_STRIP", strip_html()), ("FOOTER_LEGAL", footer_html())):
+        for name, body in (("FACTS_STRIP", strip_html()), ("FOOTER_LEGAL", footer_html()), ("CONTACT_BLOCK", contact_block_html())):
             text, changed = render(text, name, body)
         if text != orig:
             drift.append(page.name)
